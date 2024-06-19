@@ -3,6 +3,8 @@
 ## About this project
 This is a harmless replica version of a common scam that involves leading a victim to a fake version of a real website (in this case, Amazon), then stealing the login information they input. This website does not store the users' information in any way, and shows an educational page once the user has fallen for the "scam", which displays information useful to avoiding future (real) scams that a user might encounter and otherwise fall for.
 
+## Angular Information
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
 
 ## Development server
