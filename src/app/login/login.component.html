@@ -1,0 +1,19 @@
+<div id="page">
+  <img src="/assets/Amazon-Logo.jpg" class="logo-image" alt="logo" aria-hidden="true">
+  <app-sign-in-box
+    [titleMessage]="titleMessage"
+    [inputMessage]="inputMessage"
+    (submitted)="submit()"
+    ></app-sign-in-box>
+  @if (inputMessage == "Email or mobile phone number") {
+  <div id="other-info">
+    <div id="new-to-amazon" #otherInfoMessage>
+      New to Amazon?
+    </div>
+    <div class="amazon-button-wrapper" id="switch-login-register-button-wrapper">
+      <button class="amazon-button" id="switch-login-register-button" (click)="createAccount()" #createAccountButton
+        >Create your Amazon account</button>
+    </div>
+  </div>
+  }
+</div>

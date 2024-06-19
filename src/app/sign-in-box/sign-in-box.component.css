@@ -1,0 +1,74 @@
+
+.sign-in-div {
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: lightgrey;
+  box-sizing: border-box;
+
+  width: 100%;
+
+  padding: 20px 26px !important;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+#input-box {
+  width: 100%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(150, 150, 150);
+  border-radius: 3px;
+  height: 32px;
+  box-shadow: 0 0.5px 1px 1px hsla(0, 0%, 75%, 0.2) inset;
+  margin-bottom: 15px;
+  padding: 7px;
+}
+
+#input-box:focus {
+  background-color: #f7feff;
+  border-color: #017185;
+  outline: 4px solid #c8f3fa;
+}
+
+.continue-button-wrapper {
+  margin-bottom: 15px;
+}
+
+#need-help-button {
+  display: none;
+}
+
+.fas {
+  width: 6px;
+  margin-right: 5px;
+  line-height: inherit;
+}
+
+#help-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#help-section p {
+  margin-top: 5px;
+}
+
+#need-help-button:not(:checked) ~ .fa-caret-down {
+  display: none;
+}
+
+#need-help-button:checked ~ .fa-caret-right {
+  display: none;
+}
+
+#need-help-button:not(:checked) ~ div #help-dropdown {
+  display: none;
+}

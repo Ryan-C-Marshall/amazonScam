@@ -1,0 +1,38 @@
+main {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.gradient-line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(180, 180, 180, 0.5), rgba(255, 255, 255, 0));
+  margin-bottom: 15px;
+}
+
+.page-bottom {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(180, 180, 180, 0.15), rgba(255, 255, 255, 0));
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.page-bottom span {
+  margin: 20px;
+}
+
+#copyright {
+  color: gray;
+}
