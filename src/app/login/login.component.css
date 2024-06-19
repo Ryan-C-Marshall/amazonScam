@@ -1,0 +1,52 @@
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  margin-bottom: 25px;
+}
+
+.logo-image {
+  height: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#other-info {
+  width: 100%;
+}
+
+#new-to-amazon {
+  display: flex;
+  color: gray;
+  margin: 20px 0 10px 0;
+}
+
+#new-to-amazon::before, #new-to-amazon::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid lightgray;
+  width: 100px;
+  height: 8px;
+}
+
+#new-to-amazon::before {
+  margin-right: 10px;
+}
+
+#new-to-amazon::after {
+  margin-left: 10px;
+}
+
+#switch-login-register-button {
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+#switch-login-register-button:hover {
+  background-color: #f8fafa;
+}
+
+#switch-login-register-button-wrapper {
+  width: 100%;
+}

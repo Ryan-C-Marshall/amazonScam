@@ -1,0 +1,29 @@
+<div class="sign-in-div">
+  <h1 class="title">{{titleMessage}}</h1>
+  <p class="bold-text" id="input-message">{{inputMessage}}</p>
+  <input id="input-box" #inputBox><br>
+  <div class="amazon-button-wrapper continue-button-wrapper">
+    <button class="amazon-button" for="input-box" (click)="submit(inputBox)">Continue</button>
+  </div>
+  <p class="body-text">By continuing, you agree to Amazon's 
+    <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=508088"
+    >Conditions of Use</a> and 
+    <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=468496"
+    >Privacy Notice</a>.
+  </p>
+
+  <div id="help-section">
+    <input type="checkbox" id="need-help-button">
+    <label for="need-help-button" class="fas fa-solid fa-caret-down"></label>
+    <label for="need-help-button" class="fas fa-solid fa-caret-right"></label>
+    <div>
+      <label for="need-help-button"><a>Need help?</a></label>
+      <div id="help-dropdown">
+        <p><a href="https://www.amazon.com/ap/forgotpassword?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_signin&prevRID=K2K2QRH9ZFZ2D3QG0KT9&openid.assoc_handle=usflex&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+          >Forgot Password</a></p>
+        <p><a href="https://www.amazon.com/ap/forgotpassword?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_signin&prevRID=K2K2QRH9ZFZ2D3QG0KT9&openid.assoc_handle=usflex&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+          >Other issues with Sign-In</a></p>
+      </div>
+    </div>
+  </div>
+</div>
