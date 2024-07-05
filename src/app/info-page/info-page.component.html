@@ -1,0 +1,116 @@
+<div id="page">
+  <h1 id="title">Uh oh!</h1>
+  <h2 id="subtitle">You just fell for a phishing scam.</h2>
+  <div class="content">
+    <p id="title-paragraph">Don't worry &mdash; this site doesn't store or sell any of your information. Instead, 
+      this site's purpose is to educate its users in the hope that they don't fall for 
+      similar, more malicious scams. Below is some information you might find useful!</p>
+    <app-collapsible-box class="info-box" title="How could I have identified this website as a scam?" [initiallyCollapsed]="true">
+      <h3>The Email</h3>
+      <p>
+        First, the way you navigated here was unorthodox. Amazon doesn't typically send you emails like the
+        one that brought you here. A lot of scam emails 'look sketchy', have bad spelling or grammar, and use
+        generic terms (like 'Dear user'). Even if the email looks professional, be immediately skeptical of 
+        any email (or text) that directs you to a website or claims that immediate action is needed to 
+        resolve some emergency or to collect some prize.
+      </p>
+      <p>
+        Ideally, you never even end up on a scam website. By hovering over the hyperlink/button in the email, 
+        a small box should appear at the bottom of your browser showing where that link will take you, no 
+        matter how they try to hide their site's address. Try it with 
+        <a target="_blank" rel="noopener noreferrer" href="https://scam.com">this link</a> now!
+      </p>
+      <h3>The Url</h3>
+      <p>
+        Likely the best way of spotting any scam is by this url. A lot of scam urls will try to look similar
+        to the real website's url &mdash; like 'amazon-deliveries.com' or 'cibc-mysecurelogin.com' &mdash; 
+        but they make compromises like including dashes or mispelling the domain name, because they can't own
+        the actual domain. Inspect the url carefully!
+      </p>
+      <h3>The Site</h3>
+      <p>
+        If you're still not sure, there are a few ways to tell whether a site is a fake. The easiest (and best)
+        tactic is to leave the site, search up your desired website (e.g. amazon), and follow that link. However,
+        if you're determined to know whether you're being scammed, take a 'look' around the site. Oftentimes,
+        whoever built the site didn't take the time to get things like menu buttons or navigational bars working,
+        and put them there only for appearance.
+      </p>
+    </app-collapsible-box>
+    <app-collapsible-box class="info-box" title="Spotting more kinds of scams" [initiallyCollapsed]="true">
+      <p>
+        This website is a classic example of a phishing scam: a type of scam where the attacker pretends
+        to be someone they're not in order to gain your trust, after which they extract sensitive information
+        like your login or payment info. Here are some other common scams and how to thwart them.
+        <strong>Remember: if it seems too good to be true, it's almost certainly not true.</strong>
+      </p>
+      <h3>
+        Tech Support Scams
+      </h3>
+      <p>
+        Scammers pretend to be tech support from well-known companies, claiming your computer has a virus.
+        They ask for remote access to your computer. From here, the script varies, but you'll always,
+        eventually, need to pay someone. They often ask for gift cards, as they are untracable.
+      </p>
+      <p>How to avoid:</p>
+      <ul>
+        <li>Don't trust unsolicited tech support calls or pop-up messages.</li>
+        <li>If you need tech support, contact the company directly using their official website.</li>
+        <li>Install and regularly update reputable antivirus software.</li>
+        <li><strong>Never</strong> buy a gift card as payment for someone online.</li>
+      </ul>
+      <h3>Online Shopping Scams</h3>
+      <p>
+        These involve fake online stores that sell counterfeit products or don't deliver
+        the products at all.
+      </p>
+      <p>How to avoid:</p>
+      <ul>
+        <li>Research the seller and read reviews before purchasing.</li>
+        <li>Use secure payment methods like credit cards or trusted payment services.</li>
+        <li>Be especially wary of deals that seem too good to be true.</li>
+      </ul>
+      <h3>Romance Scams</h3>
+      <p>
+        Scammers create fake profiles on dating sites and social media to establish romantic
+        relationships, eventually asking for money.
+      </p>
+      <p>How to avoid:</p>
+      <ul>
+        <li>Be cautious with people you meet online, especially if they quickly express strong emotions.</li>
+        <li>Never send money or share financial information with someone you haven't met in person.</li>
+        <li>Watch for red flags like excuses to avoid meeting in person or requests for financial help.</li>
+      </ul>
+      <h3>Lottery or Prize Scams</h3>
+      <p>
+        You receive a message saying you've won a lottery or prize, but you need to pay fees or provide 
+        personal information to claim it.
+      </p>
+      <p>How to avoid:</p>
+      <ul>
+        <li>Remember, you can't win a lottery you didn't enter.</li>
+        <li>Never pay to claim a prize.</li>
+        <li>Verify any claims by contacting the organization directly through official channels.</li>
+      </ul>
+      <h3>Investment Scams</h3>
+      <p>Scammers offer high-return investment opportunities with little or no risk.</p>
+      <p>How to avoid:</p>
+      <ul>
+        <li>Be skeptical of unsolicited investment offers.</li>
+        <li>Do thorough research and seek advice from a financial advisor.</li>
+        <li>Remember the adage: if it sounds too good to be true, it probably is.</li>
+      </ul>
+    </app-collapsible-box>
+    <app-collapsible-box class="info-box" title="More reading" [initiallyCollapsed]="true">
+      <p><a href="https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-scams-and-crimes/spoofing-and-phishing"
+        >FBI - Phishing Scams</a></p>
+      <p><a href="https://en.wikipedia.org/wiki/Tabnabbing"
+        >Tabnabbing: a similar attack to this.</a></p>
+      <p><a href="https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/tech-support-scams"
+        >Tech Support Scams</a></p>
+      <p><a href="https://competition-bureau.canada.ca/fraud-and-scams/tips-and-advice/investment-scams"
+        >Canadian Government - Investment scams</a></p>
+      <p>Do more reasearch to protect yourself and share the knowledge with others!</p>
+    </app-collapsible-box>
+  </div>
+  <h2>Good luck &mdash; be safe!</h2>  
+</div>

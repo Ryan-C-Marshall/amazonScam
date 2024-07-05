@@ -15,6 +15,10 @@
   font-family: 'Amazon Ember Bold';
 }
 
+html::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+}
+
 body {  
   font-family: 'Amazon Ember', Tahoma, Arial, Helvetica, sans-serif;
   font-size: 13px;

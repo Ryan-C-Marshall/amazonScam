@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { SignInBoxComponent } from '../sign-in-box/sign-in-box.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,6 +9,7 @@ import { SignInBoxComponent } from '../sign-in-box/sign-in-box.component';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
+
 export class LoginComponent {
   titleMessage: string = "Sign in";
   inputMessage: string = "Email or mobile phone number";
@@ -16,13 +18,14 @@ export class LoginComponent {
   @ViewChild('createAccountButton') createAccountButton!: ElementRef;
   @ViewChild('otherInfoMessage') otherInfoMessage!: ElementRef;
 
+  constructor(private router: Router) {}
+
   submit() {
     if (this.inputMessage == "Email or mobile phone number") {
       // inputting email: stay on this page, switch to password
       this.inputMessage = "Password";
     } else {
-      this.titleMessage = "Uh oh.";
-      this.inputMessage = "You just fell for a phishing scam. :(";
+      this.router.navigate(["/info"])
     }
   }
 

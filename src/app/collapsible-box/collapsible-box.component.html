@@ -1,0 +1,10 @@
+<div class="info-div" #box>
+  <button id="collapse-button" #collapseButton (click)="toggle_collapsed()">
+    <h2>{{title}}</h2>
+    <img src="/assets/line.png" class="collapse-icon" alt="collapse-icon" aria-hidden="false">
+    <img #rotatingIcon src="/assets/line.png" class="collapse-icon" [class.rotated-icon]="collapsed == true" alt="collapse-icon" aria-hidden="false">
+  </button>
+  <div id="content">
+    <ng-content></ng-content>
+  </div>
+</div>
